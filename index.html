@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="author" content="Kurtsou Kiryl">
+  <meta name="description" content="Практический макет из курса от WEB-HACKER">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин одежды VSite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" role="presentation">
+    <div class="container">
+      <nav class="primary-nav">
+        <div class="primary-nav__burger burger">
+          <a class="primary-nav__link" href="#">
+            <img src="./assets/images/burger.png" alt="иконка меню">
+          </a>
+        </div>
+
+        <!--Выдвигающийся блок с ссылками.
+          Изначально скрыт, функционирует
+          через ссылку-бургер. -->
+        <div class="menu">
+          <div class="menu__item" role="menu">
+            <a class="menu__link" data-name="Женское" href="#">
+              <img src="./assets/images/she.png" alt="иконка">
+            </a>
+            <a class="menu__link" data-name="Мужское" href="#">
+              <img src="./assets/images/he.png" alt="иконка">
+            </a>
+            <a class="menu__link" data-name="Детское" href="#">
+              <img src="./assets/images/kinder.png" alt="иконка">
+            </a>
+          </div>
+
+          <div class="menu__publicity">
+            <img src="./assets/images/live03.png" alt="иконка">
+            <img src="./assets/images/live04.png" alt="иконка">
+            <img src="./assets/images/live05.png" alt="иконка">
+            <img src="./assets/images/live06.png" alt="иконка">
+          </div>
+
+          <div class="menu__item" role="menu">
+            <a class="menu__link" data-name="Новинки" href="#">
+              <img src="./assets/images/new.png" alt="иконка">
+            </a>
+            <a class="menu__link" data-name="Sale" href="#">
+              <img src="./assets/images/sale.png" alt="иконка">
+            </a>
+            <a class="menu__link" data-name="Beauty" href="#">
+              <img src="./assets/images/beauty.png" alt="иконка">
+            </a>
+          </div>
+        </div>
+
+        <ol class="primary-nav__user-room user-room" role="menu">
+          <a class="user-room__link" href="#">
+            <img src="./assets/images/basket.png" alt="иконка корзины">
+          </a>
+          <a class="user-room__link" href="#">
+            <img src="./assets/images/user.png" alt="иконка личного кабинета">
+          </a>
+          <a class="user-room__link" href="#">
+            <img src="./assets/images/like.png" alt="иконка избранного">
+          </a>
+          <a class="user-room__link" href="#">
+            <img src="./assets/images/search.png" alt="иконка поиска">
+          </a>
+        </ol>
+      </nav>
+
+      <div class="banner">
+        <h1 class="banner__title">VSite</h1>
+        <p class="banner__text">
+          <span>Липецк</span>
+          <span>Адреса магазинов</span>
+        </p>
+
+        <div class="slider">
+          <a class="slider__link" href="#">
+            <img src="./assets/images/next2.png" alt="иконка стрелки">
+          </a>
+          <a class="slider__link" href="#"></a>
+          <a class="slider__link" href="#"></a>
+          <a class="slider__link" href="#"></a>
+          <a class="slider__link" href="#"></a>
+          <a class="slider__link" href="#"></a>
+          <a class="slider__link" href="#">
+            <img src="./assets/images/next1.png" alt="иконка стрелки">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" role="main">
+    <div class="container">
+      <div class="intro">
+        <div class="intro__images">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+
+        <div class="intro__description">
+          <h2 class="intro__title">VSite — российский лайфстайл бренд одежды для молодых людей</h2>
+          <p class="intro__text">Бренд VSite создан студентами энтузиастами. Мы стремимся удовлетворить все потребности в гардеробе — от верхней одежды до белья и аксессуаров. Для создания коллекций выбираем натуральные ткани и предлагаем актуальные вещи по доступным ценам.</p>
+          <p class="intro__text">Также мы создаем одежду для маленьких (2-6 лет) и больших (7-12 лет) детей. Это практичная верхняя одежда для прогулок, а также комфортные вещи для садика и похода на кружки, основу которых составляют футболки, худи и свитшоты, джоггеры и леггинсы, трикотажные платья и многое другое.</p>
+          <p class="intro__text">Чтобы быть в курсе всех новостей и акций, рекомендуем подписаться на наши <a class="link link_neutral" href="#">рассылки</a> и <a class="link link_neutral" href="#">телеграм</a>.</p>
+          <p class="intro__text">Желаем приятных покупок! Ваш VSite</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="subscription">
+        <p class="subscription__title">Подписывайся на наши обновления</p>
+        <p class="subscription__subtitle">Узнай первым о старте скидок и специальных предложений!</p>
+
+        <div class="subscription__links" role="menu">
+          <a class="link link_secondary" href="#">Введите e-mail</a>
+          <a class="link link_primary" href="#">Подписаться</a>
+        </div>
+
+        <p class="subscription__memo">Подписываясь рассылку, вы соглашаетесь с <a class="link link_small" href="#">Политикой конфиденциальности</a>.</p>
+      </div>
+
+      <div class="secondary-nav">
+        <div class="secondary-nav__supports">
+          <div class="secondary-nav__list">
+            <div class="secondary-nav__item">Покупателям
+              <div class="secondary-nav__list secondary-nav__list_vertical" role="menu">
+                <a class="link" href="#">Доставка</a>
+                <a class="link" href="#">Отследить заказ</a>
+                <a class="link" href="#">Оплата</a>
+                <a class="link" href="#">Возврат и обмен</a>
+                <a class="link" href="#">Акции и конкурсы</a>
+                <a class="link" href="#">Таблица размеров</a>
+                <a class="link" href="#">Правила продажи</a>
+                <a class="link" href="#">Оформление заказа</a>
+                <a class="link" href="#">Уход за товаром</a>
+                <a class="link" href="#">Политика конфиденциальности</a>
+                <a class="link" href="#">Программа лояльности</a>
+              </div>
+            </div>
+            <div class="secondary-nav__item">О компании
+              <div class="secondary-nav__list secondary-nav__list_vertical" role="menu">
+                <a class="link" href="#">О нас</a>
+                <a class="link" href="#">Вакансии</a>
+                <a class="link" href="#">Контакты</a>
+              </div>
+            </div>
+          </ol>
+        </div>
+
+        <div class="secondary-nav__social social">
+          <div class="social__links" role="menu">
+            <a class="social__link" href="#">
+              <img src="./assets/images/telegram.png" alt="иконка телеграмм">
+            </a>
+            <a class="social__link" href="#">
+              <img src="./assets/images/vk.png" alt="иконка вконтакте">
+            </a>
+            <a class="social__link" href="#">
+              <img src="./assets/images/instagram.png" alt="иконка инстаграмм">
+            </a>
+          </div>
+
+          <div class="social__app" role="menu">
+            <a class="social__link" href="#">
+              <img src="./assets/images/apple.png" alt="иконка app story">
+            </a>
+            <a class="social__link" href="#">
+              <img src="./assets/images/google-play.png" alt="иконка google play">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
