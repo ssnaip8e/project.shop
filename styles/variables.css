@@ -1,0 +1,41 @@
+
+:root {
+  /* colors */
+  --bg-page: rgba(255, 255, 255, 1);
+  --bg-subscription: rgba(245, 245, 245, 1);
+  --bg-menu: rgba(242, 242, 242, 1);
+  --bg-publicity: rgba(0, 38, 84, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-link-neutral: rgba(171, 171, 171, 1);
+  --color-name-model: rgba(216, 216, 216, 0.6);
+  --bg-button-filter: rgba(37, 37, 37, 1);
+  --bg-processing-total: rgba(217, 217, 217, 0.45);
+  --color-processing-border: rgba(0, 0, 0, 0.4);
+  --bg-processing-input: rgba(231, 231, 231, 1);
+  --color-processing-neutral: rgba(0, 0, 0, 0.6);
+  --bg-processing-button: rgba(48, 170, 82, 1);
+  --color-product-01: rgba(239, 235, 224, 1);
+  --color-product-02: rgba(37, 37, 37, 1);
+  --color-product-03: rgba(255, 228, 181, 1);
+  --color-product-04: rgba(87, 47, 111, 1);
+  --color-product-05: rgba(255, 255, 241, 1);
+  --color-product-06: rgba(125, 148, 120, 1);
+  --color-product-07: rgba(225, 217, 204, 1);
+  --color-product-08: rgba(57, 113, 83, 1);
+  --color-product-09: rgba(115, 189, 228, 1);
+  --color-product-10: rgba(179, 37, 97, 1);
+  --color-product-11: rgba(72, 181, 49, 1);
+  --color-product-12: rgba(71, 67, 244, 1);
+  --color-product-13: rgba(19, 14, 20, 1);
+  --color-product-14: rgba(248, 244, 243, 1);
+  --color-product-15: rgba(52, 181, 181, 1);
+  --color-product-16: rgba(225, 30, 49, 1);
+  --color-product-17: rgba(127, 255, 0, 1);
+  --color-product-18: rgba(255, 255, 0, 1);
+
+  /* fonts */
+  --ffamily-primary: "Khula", sans-serif;
+  --ffamily-secondary: "Montserrat", sans-serif;
+
+}

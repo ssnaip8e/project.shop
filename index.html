@@ -6,91 +6,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Магазин одежды VSite</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
-<body>
+<body class="body">
 
   <header class="header" role="presentation">
-    <div class="container">
-      <nav class="primary-nav">
-        <div class="primary-nav__burger burger">
-          <a class="primary-nav__link" href="#">
-            <img src="./assets/images/burger.png" alt="иконка меню">
+    <nav class="primary-nav">
+      <a class="primary-nav__link-burger" href="#">
+        <img src="./assets/images/burger.png" alt="иконка меню">
+      </a>
+
+      <div class="primary-nav__menu menu">
+        <div class="menu__item" role="menu">
+          <a class="menu__link" data-name="Женское" href="#">
+            <img src="./assets/images/she.png" alt="иконка">
+          </a>
+          <a class="menu__link" data-name="Мужское" href="#">
+            <img src="./assets/images/he.png" alt="иконка">
+          </a>
+          <a class="menu__link" data-name="Детское" href="#">
+            <img src="./assets/images/kinder.png" alt="иконка">
           </a>
         </div>
 
-        <!--Выдвигающийся блок с ссылками.
-          Изначально скрыт, функционирует
-          через ссылку-бургер. -->
-        <div class="menu">
-          <div class="menu__item" role="menu">
-            <a class="menu__link" data-name="Женское" href="#">
-              <img src="./assets/images/she.png" alt="иконка">
-            </a>
-            <a class="menu__link" data-name="Мужское" href="#">
-              <img src="./assets/images/he.png" alt="иконка">
-            </a>
-            <a class="menu__link" data-name="Детское" href="#">
-              <img src="./assets/images/kinder.png" alt="иконка">
-            </a>
-          </div>
-
-          <div class="menu__publicity">
-            <img src="./assets/images/live03.png" alt="иконка">
-            <img src="./assets/images/live04.png" alt="иконка">
-            <img src="./assets/images/live05.png" alt="иконка">
-            <img src="./assets/images/live06.png" alt="иконка">
-          </div>
-
-          <div class="menu__item" role="menu">
-            <a class="menu__link" data-name="Новинки" href="#">
-              <img src="./assets/images/new.png" alt="иконка">
-            </a>
-            <a class="menu__link" data-name="Sale" href="#">
-              <img src="./assets/images/sale.png" alt="иконка">
-            </a>
-            <a class="menu__link" data-name="Beauty" href="#">
-              <img src="./assets/images/beauty.png" alt="иконка">
-            </a>
-          </div>
+        <div class="menu__publicity">
+          <img src="./assets/images/live03.png" alt="иконка">
+          <img src="./assets/images/live04.png" alt="иконка">
+          <img src="./assets/images/live05.png" alt="иконка">
+          <img src="./assets/images/live06.png" alt="иконка">
         </div>
 
-        <ol class="primary-nav__user-room user-room" role="menu">
-          <a class="user-room__link" href="#">
-            <img src="./assets/images/basket.png" alt="иконка корзины">
+        <div class="menu__item" role="menu">
+          <a class="menu__link" data-name="Новинки" href="#">
+            <img src="./assets/images/new.png" alt="иконка">
           </a>
-          <a class="user-room__link" href="#">
-            <img src="./assets/images/user.png" alt="иконка личного кабинета">
+          <a class="menu__link" data-name="Sale" data-text-on-icon="sale&nbsp;50%" href="#">
+            <img src="./assets/images/sale.png" alt="иконка">
           </a>
-          <a class="user-room__link" href="#">
-            <img src="./assets/images/like.png" alt="иконка избранного">
-          </a>
-          <a class="user-room__link" href="#">
-            <img src="./assets/images/search.png" alt="иконка поиска">
-          </a>
-        </ol>
-      </nav>
-
-      <div class="banner">
-        <h1 class="banner__title">VSite</h1>
-        <p class="banner__text">
-          <span>Липецк</span>
-          <span>Адреса магазинов</span>
-        </p>
-
-        <div class="slider">
-          <a class="slider__link" href="#">
-            <img src="./assets/images/next2.png" alt="иконка стрелки">
-          </a>
-          <a class="slider__link" href="#"></a>
-          <a class="slider__link" href="#"></a>
-          <a class="slider__link" href="#"></a>
-          <a class="slider__link" href="#"></a>
-          <a class="slider__link" href="#"></a>
-          <a class="slider__link" href="#">
-            <img src="./assets/images/next1.png" alt="иконка стрелки">
+          <a class="menu__link" data-name="Beauty" href="#">
+            <img src="./assets/images/beauty.png" alt="иконка">
           </a>
         </div>
+      </div>
+
+      <ol class="primary-nav__user-room user-room" role="menu">
+        <a class="user-room__link" href="#">
+          <img src="./assets/images/basket.png" alt="иконка корзины">
+        </a>
+        <a class="user-room__link" href="#">
+          <img src="./assets/images/user.png" alt="иконка личного кабинета">
+        </a>
+        <a class="user-room__link" href="#">
+          <img src="./assets/images/like.png" alt="иконка избранного">
+        </a>
+        <a class="user-room__link" href="#">
+          <img src="./assets/images/search.png" alt="иконка поиска">
+        </a>
+      </ol>
+    </nav>
+
+    <div class="header__banner banner">
+      <h1 class="banner__title">VSite</h1>
+      <p class="banner__text">
+        <span>Липецк</span>
+        <span>Адреса магазинов</span>
+      </p>
+
+      <div class="slider">
+        <a class="slider__link slider__link_first-arrow" href="#">
+          <img src="./assets/images/next2.png" alt="иконка стрелки">
+        </a>
+        <a class="slider__link slider__link_point" href="#"></a>
+        <a class="slider__link slider__link_point" href="#"></a>
+        <a class="slider__link slider__link_point" href="#"></a>
+        <a class="slider__link slider__link_point" href="#"></a>
+        <a class="slider__link slider__link_point" href="#"></a>
+        <a class="slider__link slider__link_last-arrow" href="#">
+          <img src="./assets/images/next1.png" alt="иконка стрелки">
+        </a>
       </div>
     </div>
   </header>

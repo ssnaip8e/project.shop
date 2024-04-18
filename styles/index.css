@@ -1,43 +1,130 @@
 
-:root {
-  /* colors */
-  --bg-page: rgba(255, 255, 255, 1);
-  --bg-subscription: rgba(245, 245, 245, 1);
-  --bg-menu: rgba(242, 242, 242, 1);
-  --bg-publicity: rgba(0, 38, 84, 1);
-  --color-white: rgba(255, 255, 255, 1);
-  --color-black: rgba(0, 0, 0, 1);
-  --color-link-neutral: rgba(171, 171, 171, 1);
-  --color-name-model: rgba(216, 216, 216, 0.6);
-  --bg-button-filter: rgba(37, 37, 37, 1);
-  --bg-processing-total: rgba(217, 217, 217, 0.45);
-  --color-processing-border: rgba(0, 0, 0, 0.4);
-  --bg-processing-input: rgba(231, 231, 231, 1);
-  --color-procwssing-neutral: rgba(0, 0, 0, 0.6);
-  --bg-processing-button: rgba(48, 170, 82, 1);
-  --color-product-01: rgba(239, 235, 224, 1);
-  --color-product-02: rgba(37, 37, 37, 1);
-  --color-product-03: rgba(255, 228, 181, 1);
-  --color-product-04: rgba(87, 47, 111, 1);
-  --color-product-05: rgba(255, 255, 241, 1);
-  --color-product-06: rgba(125, 148, 120, 1);
-  --color-product-07: rgba(225, 217, 204, 1);
-  --color-product-08: rgba(57, 113, 83, 1);
-  --color-product-09: rgba(115, 189, 228, 1);
-  --color-product-10: rgba(179, 37, 97, 1);
-  --color-product-11: rgba(72, 181, 49, 1);
-  --color-product-12: rgba(71, 67, 244, 1);
-  --color-product-13: rgba(19, 14, 20, 1);
-  --color-product-14: rgba(248, 244, 243, 1);
-  --color-product-15: rgba(52, 181, 181, 1);
-  --color-product-16: rgba(225, 30, 49, 1);
-  --color-product-17: rgba(127, 255, 0, 1);
-  --color-product-18: rgba(255, 255, 0, 1);
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./reset.css);
+
+/* mix rules */
 
 
+/* body */
+.body {
+  font-family: var(--ffamily-secondary);
+  color: var(--color-black);
+  background: var(--bg-page);
+  overflow-X: hidden;
+}
 
+/* header */
+.header {
+  position: relative;
+  max-width: 1440px;
+  min-height: 800px;
+  padding: 22px 0 62px 70px;
+  margin-inline: auto;
+  background-image: url(./../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 1370px;
+}
 
+.header::before,
+.header::after { position: absolute; }
 
+.header::before {
+  content: url(./../assets/images/logo-big.png);
+  left: 112px;
+  top: 22px;
+}
+
+.header::after {
+  content: url(./../assets/images/DENIM.png);
+  left: 1060px;
+  top: 67px;
+}
+
+/* header --> primary-nav */
+.primary-nav { position: relative; }
+
+.primary-nav__user-room {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  width: 70px;
+}
+
+:is(.primary-nav__link-burger:hover, .user-room__link:hover) { scale: 1.15; }
+
+.primary-nav__link-burger:hover .menu { display: block;}
+
+/* header --> menu */
+.menu {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: -90px;
+  width: 900px;
+  height: 800px;
+  padding-block: 38px 27px;
+  background-color: var(--bg-menu);
+  z-index: 2;
+}
+
+.menu__publicity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 49px;
+  height: 220px;
+  background-color: var(--bg-publicity);
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 73px;
+}
+
+.menu__item:first-child { margin-bottom: 13px; }
+.menu__item:last-child  { margin-top: 16px; }
+
+.menu__link {
+  position: relative;
+  width: 200px;
+  height: 237px;
+}
+
+.menu__link:hover img {
+  scale: 1.05;
+}
+
+.menu__link::after {
+  content: attr(data-name);
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.menu__link::before {
+  content: attr(data-text-on-icon);
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+  z-index: 4;
 }
 
 
@@ -45,6 +132,70 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* header --> banner */
+.header__banner {
+  position: absolute;
+  bottom: 62px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 243px;
+}
+
+.banner__title { display: none; }
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  font-weight: 400px;
+}
+
+/* header --> slider */
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__link_first-arrow { margin-right: 55px; }
+.slider__link_last-arrow  { margin-left: 55px; }
+
+:is(.slider__link_first-arrow:hover, .slider__link_last-arrow:hover) { scale: 1.15; }
+
+.slider__link_point {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.slider__link_point:hover { opacity: 1; }
+
+.slider__link_point + .slider__link_point { margin-left: 97px; }
+
+
+
+
+
+
+
+
+/* main */
+
+/* footer */
 
 
 

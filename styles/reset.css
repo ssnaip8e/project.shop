@@ -1,0 +1,44 @@
+
+:where(*, *:before, *:after) {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+}
+
+:where(img, picture) {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+:where(ul[class], ol[class]) { list-style: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
